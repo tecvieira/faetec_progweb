@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<!-- Declara o tipo de documento como HTML5 -->
+
+<html lang="pt-br">
+<!-- Tag raiz do documento HTML. O atributo 'lang' define o idioma da página -->
+
+<head>
+  <!-- Contém metadados da página (não exibidos diretamente ao usuário) -->
+
+  <meta charset="UTF-8">
+  <!-- Define a codificação de caracteres para UTF-8 (suporta acentuação) -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Garante que a página se ajuste corretamente em dispositivos móveis -->
+
+  <meta name="description" content="Página HTML de exemplo para aprendizado com todas as tags básicas.">
+  <!-- Descrição da página para motores de busca -->
+
+  <meta name="author" content="Seu Nome">
+  <!-- Autor da página -->
+
+  <title>Página de Exemplo HTML5</title>
+  <!-- Título da aba do navegador -->
+
+  <!--<link rel="stylesheet" href="css/estilos_html_completo.css">-->
+    
+  <!-- Link externo para um arquivo CSS -->
+
+  <style>
+    /* Estilo embutido */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      color: #000000;
+    }
+  </style>
+
+  <script>
+    // Script JavaScript embutido
+    function mostrarMensagem() {
+      alert("Seja bem-vindo!");
+    }
+  </script>
+</head>
+
+<body>    
+  <!-- Conteúdo visível da página -->
+
+  <header>
+    <!-- Cabeçalho da página -->
+    <h1 class="red">Bem-vindo à Página de Exemplo</h1>
+    <h1 class="blue">Teste de H1</h1>
+    <h1 style="color:chocolate;">Teste de H1 direto na tag</h1>
+    <nav>
+      <!-- Navegação principal -->
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Conteúdo principal da página -->
+
+    <section id="sobre">
+      <!-- Seção sobre -->
+      <h2 class="red">Sobre Nós</h2>
+      <p>Somos uma empresa fictícia dedicada ao ensino de HTML e tecnologias web.</p>
+      <figure>
+        <!-- Imagem com legenda -->
+        <img src="https://www.faetec.rj.gov.br/images/banners/BANNER-UNIFAETEC.jpg" alt="Imagem de exemplo" width="200px;">
+        <figcaption>Exemplo de imagem com legenda</figcaption>
+      </figure>
+    </section>
+
+    <section id="servicos">
+      <!-- Seção de serviços -->
+      <h2>Nossos Serviços</h2>
+      <article>
+        <!-- Artigo independente dentro da seção -->
+        <h3>Curso de HTML</h3>
+        <p>Aprenda HTML do zero com nossos cursos completos e atualizados.</p>
+      </article>
+      <article>
+        <h3>Consultoria Web</h3>
+        <p>Ajudamos você a criar e otimizar seu site.</p>
+      </article>
+    </section>
+
+    <aside>
+      <!-- Conteúdo lateral (complementar ao conteúdo principal) -->
+      <h3>Dica do Dia</h3>
+      <p>Use <code>&lt;semântica&gt;</code> para melhorar a acessibilidade do seu site!</p>
+    </aside>
+
+    <section id="formulario">
+      <!-- Seção de formulário -->
+      <h2>Formulário de Contato</h2>
+      <form action="#" method="post">
+        <!-- Formulário HTML -->
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="mensagem">Mensagem:</label><br>
+        <textarea id="mensagem" name="mensagem" rows="5"></textarea><br>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <section>
+      <!-- Exemplo de tabela -->
+      <h2>Tabela de Preços</h2>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Serviço</th>
+            <th>Preço</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Curso HTML</td>
+            <td>R$ 200,00</td>
+          </tr>
+          <tr>
+            <td>Consultoria</td>
+            <td>R$ 150,00/h</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <button onclick="mostrarMensagem()">Clique Aqui</button>
+    <!-- Botão que ativa um script JavaScript -->
+  </main>
+
+  <footer>
+    <!-- Rodapé da página -->
+    <p>&copy; 2025 - Todos os direitos reservados.</p>
+  </footer>
+</body>
+
+</html>
