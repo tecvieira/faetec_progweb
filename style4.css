@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(211, 206, 206);
+}
+
+
+
+#aqui{
+    background-color: rgb(150, 221, 221);
+}
+
+#cor{
+    background-color: rgb(110, 110, 202);
+    color: white;
+}
+
+#titulo{
+    background-color: rgb(184, 93, 93);
+    color: white;
+}
+
+#limpaTela{
+    background-color: rgb(158, 143, 172);
+    color: white;
+}
+
