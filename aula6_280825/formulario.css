@@ -1,0 +1,78 @@
+@charset "UTF8";
+
+/* Resetando margens e preenchimentos padrão, aplicando box-sizing para incluir padding e borda na largura total, 
+e definindo uma fonte padrão para toda a página */ 
+* { 
+margin: 0; 
+padding: 0; 
+box-sizing: border-box; 
+font-family: Arial, sans-serif; 
+}
+
+/* Estilo do corpo da página: - Define a cor de fundo - Usa Flexbox para centralizar o conteúdo na tela (horizontal e verticalmente) */ 
+body { 
+background-color: #c0c6ce; 
+display: flex; 
+justify-content: center; 
+align-items: center; 
+}
+
+/*Estilo do container do formulário 
+-Fundo branco
+-Espaçamento interno (padding)
+-Bordas arredondadas
+-Sombra para dar leveza
+- Largura máxima de 400px, ocupando 100% do espaço disponível dentro do limite*/
+
+.form-container { 
+background-color: #ffffff; 
+padding: 20px; 
+border-radius: 8px; 
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+max-width: 400px; 
+width: 100%; 
+}
+
+/* Estilo do formulário: - Usa Flexbox em coluna para empilhar os elementos verticalmente */ 
+form { 
+display: flex; 
+flex-direction: column;
+
+}
+
+/* Estilo das etiquetas (labels) dos campos: - Espaçamento superior e inferior - Negrito e cor escura para melhor visibilidade */ 
+label { 
+margin: 10px 0 5px; 
+font-weight: bold; 
+color: #333; 
+}
+
+/* Estilo dos campos de entrada, seleção, área de texto e botão: - Espaçamento interno e inferior - Borda sutil e cantos arredondados - Tamanho de fonte legível */ 
+input, select, textarea, button { 
+padding: 10px; 
+margin-bottom: 15px; 
+border: 1px solid #ddd; 
+border-radius: 4px; 
+font-size: 14px; 
+}
+
+/* Estilo do botão: - Fundo azul, texto branco - Remove borda padrão - Cursor muda para "pointer" ao passar o mouse - Transição suave na mudança de cor ao interagir */ 
+button {  
+background-color: #007bff; 
+
+color: #fff; 
+border: none; 
+cursor: pointer; 
+transition: background-color 0.3s ease; 
+}
+
+/* Efeito visual ao passar o mouse sobre o botão: - Escurece o fundo do botão */ 
+button:hover { 
+background-color: #0056b3; 
+}
+
+/* Estilo da linha horizontal (separador): - Adiciona espaçamento acima e abaixo da linha */ 
+hr { 
+margin-top: 20px; 
+margin-bottom: 20px; 
+}
