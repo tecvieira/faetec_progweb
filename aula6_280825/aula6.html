@@ -52,6 +52,7 @@
                 <label for="cor">Cor Favorita:</label>
                 <input type="color" id="cor" name="cor" value="#ff0000">
             </div>
+            <div id="caixa-de-cor"></div>
 
             <hr>
             <div>
@@ -96,6 +97,19 @@
             <input type="reset" value="Limpar">
         </form>
     </div>
+
+     <script>
+        const seletorCor = document.getElementById('cor');
+        const caixaDeCor = document.getElementById('caixa-de-cor');
+
+        // Inicializa a caixa de cor com o valor inicial
+        caixaDeCor.style.backgroundColor = seletorCor.value;
+
+        // Adiciona um "ouvinte" de eventos para mudar a cor
+        seletorCor.addEventListener('input', function() {
+        caixaDeCor.style.backgroundColor = seletorCor.value;
+    });
+  </script>
 </body>
 
 </html>
