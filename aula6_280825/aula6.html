@@ -48,9 +48,9 @@
             <input type="file" id="arquivo" name="arquivo">
             <div>
 
-                <!--Campo de cor-->
-                <label for="cor">Cor Favorita:</label>
-                <input type="color" id="cor" name="cor" value="#ff0000">
+            <!--Campo de cor-->
+            <label for="cor">Cor Favorita:</label>
+            <input type="color" id="cor" name="cor" value="#ff0000">
             </div>
             <div id="caixa-de-cor">cor escolhida</div>
 
@@ -58,7 +58,6 @@
             <div>
                 <!--Campo de radio-->
                 <label for="masculino">Gênero:</label>
-
                 <input type="radio" id="masculino" name="genero" value="masculino">
                 <label for="masculino">Masculino</label>
                 <input type="radio" id="feminino" name="genero" value="feminino">
@@ -76,6 +75,7 @@
                 <label for="tecnologia">Tecnologia</label>
             </div>
             <hr>
+
             <!-- Campo de seleção (dropdown) -->
             <label for="pais">País:</label>
             <select id="pais" name="pais">
@@ -85,12 +85,14 @@
                 <option value="angola" selected>Angola</option>
             </select>
             <br>
+
             <!-- Campo de textarea -->
             <label for="mensagem">Mensagem:</label>
             <br>
             <textarea id="mensagem" name="mensagem" rows="8" placeholder="Escreva sua mensagem..."
-                maxlength="200"></textarea>
+            maxlength="200"></textarea>
             <br>
+            
             <!-- Botão de envio -->
             <button type="submit">Enviar</button>
             <!--<input type="submit" value="Enviar">-->
@@ -98,7 +100,7 @@
         </form>
     </div>
 
-     <script>
+    <script>
         const seletorCor = document.getElementById('cor');
         const caixaDeCor = document.getElementById('caixa-de-cor');
 
@@ -109,7 +111,7 @@
         seletorCor.addEventListener('input', function() {
         caixaDeCor.style.backgroundColor = seletorCor.value;
     });
-  </script>
+    </script>
 </body>
 
 </html>
