@@ -56,7 +56,7 @@ a:hover{
     height: 300px;
     padding: 10px;
     border-radius: 20px;
-    
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #destaque h1{
@@ -65,7 +65,6 @@ a:hover{
     text-align: center;
     color: white; 
 }
-
 
 #destaque h2{
     font-size: 1.5em;
@@ -76,7 +75,7 @@ a:hover{
 #destaque p{
     text-align: center;
     padding-top: 30px;
-    font-size: 1.4em;
+    font-size: 1.2em;
     color: white;
 }
 
@@ -101,3 +100,94 @@ a:hover{
 #destaque div button:hover{
     background-color: rgb(119, 119, 202);
 }
+
+#sobre{
+    background-color: rgb(209, 209, 202);
+    margin: auto;
+    width: 1000px;
+    height: 350px;
+    padding: 10px;
+    margin-top: 40px;
+    border-radius: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.658);
+}
+
+#sobre h2{
+    font-size: 1.5em;
+    text-align: left;
+    padding:10px 0 10px 20px ;
+}
+
+#sobre article{
+    display: flex;
+    padding: 15px;
+}
+
+#sobre article p{
+    padding: 60px 15px 15px 30px;
+    font-size: 1.5em;
+}
+
+#sobre article figcaption{
+    padding: 5px 0px 0px 25px;
+}
+
+#servicos{
+    background-color: rgb(209, 209, 202);
+    margin: auto;
+    width: 1000px;
+    height: 350px;
+    padding: 10px;
+    margin-top: 40px;
+    border-radius: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.658);
+}
+
+#servicos h2{
+    font-size: 1.5em;
+    text-align: left;
+    padding: 10px 0 10px 20px;
+}
+
+#servicos ul{
+    justify-content: center;
+    align-items: center;
+}
+
+#planos{
+    background-color: rgb(209, 209, 202);
+    margin: auto;
+    width: 1000px;
+    height: 350px;
+    padding: 10px;
+    margin-top: 40px;
+    border-radius: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.658);
+}
+
+#contato{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(209, 209, 202);
+    margin: auto;
+    width: 1000px;
+    height: 350px;
+    padding: 10px;
+    margin-top: 40px;
+    border-radius: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.658);
+}
+
+#contato h2{
+    font-size: 1.5em;
+    text-align: left;
+    padding: 10px 0 10px 20px;
+}
+
+
+
