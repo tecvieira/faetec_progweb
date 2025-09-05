@@ -1,0 +1,103 @@
+@charset "UTF-8";
+*{
+    padding: 0;
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(240, 224, 224);
+}
+
+header{
+    display: flex;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.logo{
+    margin: 10px 10px 10px 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 5px; 
+}
+
+nav{
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-right: 30px;
+}
+
+ul{
+    display: flex;
+    justify-content: flex-end;
+}
+
+a{
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 15px;
+    text-decoration: none;
+    color: rgb(202, 183, 183);
+}
+
+a:hover{
+    color: rgb(49, 121, 155);
+    font-size: 1.4em;
+}
+
+#destaque{
+    background-image: linear-gradient(to top, rgb(49, 179, 49), rgb(119, 119, 202));
+    margin: auto;
+    width: 1000px;
+    height: 300px;
+    padding: 10px;
+    border-radius: 20px;
+    
+}
+
+#destaque h1{
+    font-size: 2em;
+    padding: 15px;
+    text-align: center;
+    color: white; 
+}
+
+
+#destaque h2{
+    font-size: 1.5em;
+    text-align: center;
+    color: white;
+}
+
+#destaque p{
+    text-align: center;
+    padding-top: 30px;
+    font-size: 1.4em;
+    color: white;
+}
+
+#destaque div{
+    display: flex;
+    justify-content: center;
+}
+
+#destaque div button{
+    margin-top: 60px;
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px 20px 15px 20px;
+    border-radius: 10px;
+    background-color: rgb(36, 126, 36);
+    color: white;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.658);
+    text-shadow: 2px 2px 1px black;
+    
+}
+
+#destaque div button:hover{
+    background-color: rgb(119, 119, 202);
+}
