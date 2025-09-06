@@ -7,36 +7,43 @@
 }
 
 body{
-    background-color: rgb(240, 224, 224);
+    background-color: rgb(127, 119, 119);
+}
+
+.inicia-pagina{
+
 }
 
 header{
     display: flex;
+    width: 100vw;
+    padding: 10px;
+    
     background-color: black;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 40px;
+    
 }
 
 .logo{
     margin: 10px 10px 10px 20px;
     width: 60px;
     height: 60px;
-    border-radius: 5px; 
+    border-radius: 5px;
 }
 
-nav{
+header nav{
     flex-direction: column;
     flex-wrap: wrap;
     margin-right: 30px;
 }
 
-ul{
+header nav ul{
     display: flex;
     justify-content: flex-end;
 }
 
-a{
+header nav ul a{
     font-size: 1.2em;
     font-family: Arial, Helvetica, sans-serif;
     padding-left: 15px;
@@ -44,10 +51,12 @@ a{
     color: rgb(202, 183, 183);
 }
 
-a:hover{
+header nav ul a:hover{
     color: rgb(49, 121, 155);
     font-size: 1.4em;
+    transition: color .4s;
 }
+
 
 #destaque{
     background-image: linear-gradient(to top, rgb(49, 179, 49), rgb(119, 119, 202));
@@ -57,6 +66,7 @@ a:hover{
     padding: 10px;
     border-radius: 20px;
     font-family: Arial, Helvetica, sans-serif;
+    margin-top: 40px;
 }
 
 #destaque h1{
@@ -94,7 +104,6 @@ a:hover{
     color: white;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.658);
     text-shadow: 2px 2px 1px black;
-    
 }
 
 #destaque div button:hover{
@@ -152,8 +161,32 @@ a:hover{
 }
 
 #servicos ul{
-    justify-content: center;
+    display: block;
+    list-style-type: none;
+    text-align: center;
+    font-size: 1.4em;
+    color: rgb(45, 39, 39);
+    padding: 10px;
+    margin: 10px;
+    font-weight: bold;
+}
+
+#servicos h3 {
+    font-size: 1.5em;
+    text-align: left;
+    padding: 10px 0 10px 20px;
+}
+
+#servicos ol{
+    display: flex;
+    color: rgb(45, 39, 39);
+    flex-direction: column;
     align-items: center;
+    list-style: none;
+    padding: 10px;
+    font-size: 1.5em;
+    font-weight: bold;
+    
 }
 
 #planos{
@@ -168,14 +201,34 @@ a:hover{
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.658);
 }
 
-#contato{
-    display: flex;
-    justify-content: center;
+#planos h2{
+    font-size: 1.5em;
+    text-align: left;
+    padding: 10px 0 10px 20px;
+}
+
+#planos table{
+    margin: auto;
+    margin-top: 50px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 500px;
+    font-size: 1.4em;
+}
+
+#planos table td, th{
+    
+
+    border: 1px solid black;
     text-align: center;
+    padding: 5px;
+} 
+
+#contato{
     background-color: rgb(209, 209, 202);
     margin: auto;
     width: 1000px;
-    height: 350px;
+    height: 500px;
     padding: 10px;
     margin-top: 40px;
     border-radius: 20px;
@@ -189,5 +242,76 @@ a:hover{
     padding: 10px 0 10px 20px;
 }
 
+#contato fieldset{
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    width: 400px;
+    padding: 15px;
+}
 
+#contato fieldset legend, label{
+    font-size: 1.3em;
+    padding-bottom: 5px;
+}
+
+#contato fieldset input{
+    margin: auto;
+    height: 20px;
+    margin-bottom: 5px;
+    width: 400px;
+}
+
+#contato fieldset textarea{
+    margin-bottom: 10px;
+    width: 400px;
+}
+
+#contato #enviar{
+    background-color: rgb(114, 227, 70);
+    color: rgb(10, 101, 12);
+    width: 200px;
+    height: 30px;
+    margin-top: 10px;
+    border-radius: 8px;
+    font-size: 1.2em;
+    font-weight: bolder;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.658);
+    
+}
+
+#contato #limpar {
+    background-color: rgb(201, 37, 37);
+    color: rgb(0, 255, 238);
+    width: 200px;
+    height: 30px;
+    margin-top: 10px;
+    border-radius: 8px;
+    font-size: 1.2em;
+    font-weight: bolder;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.658);
+
+}
+
+footer{
+    /*background-color: rgb(75, 71, 71);*/
+    background-image: linear-gradient(to top, rgb(127, 119, 119), rgb(75, 71, 71));
+    
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+    font-size: 1.3em;
+}
+
+footer a{
+    text-decoration: none;
+    /color: rgb(72, 244, 4);
+    
+
+footer a:hover{
+    color: rgb(0, 8, 255);
+    font-size: 1.4em;
+    transition: color .4s;
+}
 
