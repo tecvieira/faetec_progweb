@@ -4,25 +4,20 @@
     border: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body{
-    background-color: rgb(127, 119, 119);
-}
-
-.inicia-pagina{
-
+    background-color: rgb(237, 231, 231);
 }
 
 header{
     display: flex;
     width: 100vw;
     padding: 10px;
-    
     background-color: black;
     justify-content: space-between;
     align-items: center;
-    
 }
 
 .logo{
@@ -57,7 +52,6 @@ header nav ul a:hover{
     transition: color .4s;
 }
 
-
 #destaque{
     background-image: linear-gradient(to top, rgb(49, 179, 49), rgb(119, 119, 202));
     margin: auto;
@@ -65,7 +59,6 @@ header nav ul a:hover{
     height: 300px;
     padding: 10px;
     border-radius: 20px;
-    font-family: Arial, Helvetica, sans-serif;
     margin-top: 40px;
 }
 
@@ -97,7 +90,6 @@ header nav ul a:hover{
 #destaque div button{
     margin-top: 60px;
     font-size: 1.2em;
-    font-family: Arial, Helvetica, sans-serif;
     padding: 15px 20px 15px 20px;
     border-radius: 10px;
     background-color: rgb(36, 126, 36);
@@ -118,7 +110,6 @@ header nav ul a:hover{
     padding: 10px;
     margin-top: 40px;
     border-radius: 20px;
-    font-family: Arial, Helvetica, sans-serif;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.658);
 }
 
@@ -150,7 +141,7 @@ header nav ul a:hover{
     padding: 10px;
     margin-top: 40px;
     border-radius: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+    
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.658);
 }
 
@@ -197,7 +188,6 @@ header nav ul a:hover{
     padding: 10px;
     margin-top: 40px;
     border-radius: 20px;
-    font-family: Arial, Helvetica, sans-serif;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.658);
 }
 
@@ -217,8 +207,6 @@ header nav ul a:hover{
 }
 
 #planos table td, th{
-    
-
     border: 1px solid black;
     text-align: center;
     padding: 5px;
@@ -232,7 +220,6 @@ header nav ul a:hover{
     padding: 10px;
     margin-top: 40px;
     border-radius: 20px;
-    font-family: Arial, Helvetica, sans-serif;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.658);
 }
 
@@ -277,7 +264,6 @@ header nav ul a:hover{
     font-size: 1.2em;
     font-weight: bolder;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.658);
-    
 }
 
 #contato #limpar {
@@ -290,13 +276,10 @@ header nav ul a:hover{
     font-size: 1.2em;
     font-weight: bolder;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.658);
-
 }
 
 footer{
-    /*background-color: rgb(75, 71, 71);*/
     background-image: linear-gradient(to top, rgb(127, 119, 119), rgb(75, 71, 71));
-    
     color: white;
     text-align: center;
     padding: 15px;
@@ -306,8 +289,8 @@ footer{
 
 footer a{
     text-decoration: none;
-    /color: rgb(72, 244, 4);
-    
+    color: rgb(72, 244, 4);
+}
 
 footer a:hover{
     color: rgb(0, 8, 255);
