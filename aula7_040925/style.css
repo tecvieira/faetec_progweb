@@ -151,7 +151,7 @@ header nav ul a:hover{
 }
 
 #servicos h2{
-    font-size: 1.4em;
+    font-size: 1.5em;
     text-align: left;
     padding: 8px 0 8px 20px;
 }
@@ -165,7 +165,7 @@ header nav ul a:hover{
 }
 
 #servicos h3 {
-    font-size: 1.4em;
+    font-size: 1.5em;
     text-align: left;
     padding: 8px 0 8px 20px;
 }
@@ -264,9 +264,14 @@ header nav ul a:hover{
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.658);
 }
 
+#contato #enviar:hover{
+    color: white;
+    background-color:rgb(10, 101, 12) ;
+}
+
 #contato #limpar {
-    background-color: rgb(201, 37, 37);
-    color: rgb(0, 255, 238);
+    background-color: rgb(148, 41, 41);
+    color: rgb(255, 251, 0);
     width: 200px;
     height: 30px;
     margin-top: 10px;
@@ -274,6 +279,11 @@ header nav ul a:hover{
     font-size: 1.2em;
     font-weight: bolder;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.658);
+}
+
+#contato #limpar:hover{
+    color: white;
+    background-color:rgb(201, 37, 37) ;
 }
 
 footer{
