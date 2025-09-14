@@ -1,107 +1,164 @@
 @charset "UTF-8";
+
 /*Fazendo um reset na página*/
-*{
-    padding: 0;  /* remove o espaçamento interno entre o conteúdo de um elemento*/
-    margin: 0; /* remove as margens padrão dos elementos do navegador */
-    box-sizing: border-box; /*usada para ajustar como as dimensões de largura (width) e altura (height) de um elemento */
+* {
+    padding: 0;
+    /* remove o espaçamento interno entre o conteúdo de um elemento*/
+    margin: 0;
+    /* remove as margens padrão dos elementos do navegador */
+    box-sizing: border-box;
+    /*usada para ajustar como as dimensões de largura (width) e altura (height) de um elemento */
 }
 
-body{
-    font-family: Arial, Helvetica, sans-serif; /* tipo de fonte padrão */
-    background-color: #f4f6f8; /* cor do fundo da página*/
-    color: #333; /*cor da fonte padão*/
-    line-height: 1.7; /*espaçamento entre linhas para melhorar a leitura*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    /* tipo de fonte padrão */
+    background-color: #f4f6f8;
+    /* cor do fundo da página*/
+    color: #333;
+    /*cor da fonte padão*/
+    line-height: 1.7;
+    /*espaçamento entre linhas para melhorar a leitura*/
 }
 
-.logo{
-    border-radius: 10px; /* bordas arredondas */
-    width: 50px; /* largura do elemento */
-    height: auto; /* auto -> altura proporcional a largura ( não distorce a imagem)*/
+.logo {
+    border-radius: 10px;
+    /* bordas arredondas */
+    width: 50px;
+    /* largura do elemento */
+    height: auto;
+    /* auto -> altura proporcional a largura ( não distorce a imagem)*/
 }
 
-header{
-    display: flex; /*transforma em container ou seja um elemento flexivel */
-    background-color: #0f172a; /*cor do fundo*/
-    color: #fff; /* cor da letra */
-    padding: 20px 50px; /* espaçamento interno 20px vertical e 50px  horizontal */
-    justify-content: space-between; 
-    align-items: center; /* Alinha os ítens verticalemte*/
-    position: sticky; /* Fixa o header no topo ao rolar a página*/
-    top: 0; /* define o topo fixo para 0*/
-    z-index: 1000; /*mantem o cabeçalho sobre os conteudos*/
-}
-
-header img{
-    max-height: 45px; /* limita a altura da imagem em 45px*/
-}
-
-nav ul{
-    list-style: none; /* remove os marcadores da lista*/
-    display: flex; /*exibe os ítem linha*/
-    gap: 25px; /* espeço de 25px entre os ítens da lista*/
-}
-
-nav a{
+header {
+    display: flex;
+    /*transforma em container ou seja um elemento flexivel */
+    background-color: #0f172a;
+    /*cor do fundo*/
     color: #fff;
-    text-decoration: none; /* Remove sublinhado dos links*/
-    font-weight: 500; /* peso médio da fonte */
-    transition: 0.3s; /* Transitção suave para efeitos*/
+    /* cor da letra */
+    padding: 20px 50px;
+    /* espaçamento interno 20px vertical e 50px  horizontal */
+    justify-content: space-between;
+    align-items: center;
+    /* Alinha os ítens verticalemte*/
+    position: sticky;
+    /* Fixa o header no topo ao rolar a página*/
+    top: 0;
+    /* define o topo fixo para 0*/
+    z-index: 1000;
+    /*mantem o cabeçalho sobre os conteudos*/
 }
 
-nav a:hover{
+header img {
+    max-height: 45px;
+    /* limita a altura da imagem em 45px*/
+}
+
+nav ul {
+    list-style: none;
+    /* remove os marcadores da lista*/
+    display: flex;
+    /*exibe os ítem linha*/
+    gap: 25px;
+    /* espeço de 25px entre os ítens da lista*/
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    /* Remove sublinhado dos links*/
+    font-weight: 500;
+    /* peso médio da fonte */
+    transition: 0.3s;
+    /* Transitção suave para efeitos*/
+}
+
+nav a:hover {
     color: #38bdf8;
 }
 
-main{
+main {
     max-width: 1000px;
     margin: 0 auto;
     padding: 40px 20px;
 }
 
-section{
-    background-color: #fff; /*Cor do fundo da section*/
-    padding: 40px; /*Espaçamento interno*/
-    border-radius: 12px; /*Bordas arredondadas*/
-    margin-bottom: 60px; /*Espaço abaixo de cada seção*/
-    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.356); /*Sombra leve destaque*/
+section {
+    background-color: #fff;
+    /*Cor do fundo da section*/
+    padding: 40px;
+    /*Espaçamento interno*/
+    border-radius: 12px;
+    /*Bordas arredondadas*/
+    margin-bottom: 60px;
+    /*Espaço abaixo de cada seção*/
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.356);
+    /*Sombra leve destaque*/
 }
 
-#destaque{
-    text-align: center; /*centraliza o texto*/
-    background-image: linear-gradient(135deg, #f0c102, #d84409);/* fundo degrqade*/
-    color: #fff; /*Cor do texto*/
-    padding: 50px 30px; /*Espaçamento interno amplo*/
+#destaque {
+    text-align: center;
+    /*centraliza o texto*/
+    background-image: linear-gradient(135deg, #f0c102, #d84409);
+    /* fundo degrqade*/
+    color: #fff;
+    /*Cor do texto*/
+    padding: 50px 30px;
+    /*Espaçamento interno amplo*/
 }
 
-#destaque h1{
+#destaque h1 {
     font-size: 2.5rem;
     margin-bottom: 15px;
 }
 
-#destaque h2{
+#destaque h2 {
     font-size: 1.3em;
     margin-bottom: 15px;
     font-weight: 400;
 }
 
-#destaque p{
+#destaque p {
     max-width: 500px;
-    margin: 0 auto 30px auto; /*Centraliza e da margem inferior*/
+    margin: 0 auto 30px auto;
+    /*Centraliza e da margem inferior*/
 }
 
-#destaque button{
+#destaque button {
     background-color: #facc15;
-    border: none; /*Remove a borda*/
+    border: none;
+    /*Remove a borda*/
     padding: 12px 28px;
     font-size: 1em;
     font-weight: bold;
     border-radius: 6px;
-    cursor: pointer; /*mouse muda a forma para indicar um clique*/
+    cursor: pointer;
+    /*mouse muda a forma para indicar um clique*/
     /*transition: 0.8s;*/
 }
 
-#destaque button:hover{
-    background-color: #b48f1e; /*muda a cor de fundo ao passar o mouse*/
-    color: white; /*muda a cor das letras para branco*/
+#destaque button:hover {
+    background-color: #b48f1e;
+    /*muda a cor de fundo ao passar o mouse*/
+    color: white;
+    /*muda a cor das letras para branco*/
     transition: 0.8s;
+}
+
+#sobre {
+    display: flex;
+    text-align: center;
+    
+    /*centraliza o texto*/
+    /* fundo degrqade*/
+    color: #141414;
+    /*Cor do texto*/
+    padding: 50px 30px;
+    /*Espaçamento interno amplo*/
+}
+
+#sobre h2 {
+    margin: 0 auto;
+    padding-bottom: ;
 }
