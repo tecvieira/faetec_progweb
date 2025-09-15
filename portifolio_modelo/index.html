@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_portifolio.css">
+    <title>Aquario portifólio</title>
+</head>
+
+<body>
+    <div class="particulas"></div>
+
+
+    <nav class="navegacao">
+        <ul class="menu">
+            <li><a href="#inicio" class="menu-link">Início</a></li>
+            <li><a href="#sobre" class="menu-link">Sobre</a></li>
+            <li><a href="#projetos" class="menu-link">Projetos</a></li>
+            <li><a href="#contatos" class="menu-link">Contatos</a></li>
+        </ul>
+    </nav>
+    <main id="inicio" class="cabecalho">
+
+        <img src="image/crianca-mulher.jpg" alt="foto menina" class="foto-perfil">
+        <h1>Zélia Vieira.</h1>
+        <p class="cabecalho-sub-titulo">Modelo de teste.</p>
+
+    </main>
+    <section id="sobre" class="sobre">
+        <h2 class="sobre-titulo">Sobre Mim.</h2>
+        <div class="sobre-caixa">
+            <p class="sobre-paragrafo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus illo vero
+                nesciunt delectus est alias asperiores nostrum neque ut distinctio? Reprehenderit totam repellat
+                deleniti nobis qui vitae pariatur veniam laudantium.</p>
+        </div>
+    </section>
+    <section id="projetos" class="projetos">
+        <h2 class="projetos-titulos">Meus Projetos</h2>
+        <div class="projetos-caixa">
+
+            <div class="projetos-card">
+                <img src="image/vidro_redondo-650.jpg" alt="aquario redondo" class="projetos-imagem">
+                <div class="caixa-textos-projetos">
+                    <h3 class="info-projetos">
+                        Primeiro Aquário
+                    </h3>
+                    <p class="paragrafo-projetos">
+                        Um aquario de vidro redondo, onde iniciei no mundo aquarismo.
+                    </p>
+                </div>
+            </div>
+
+            <div class="projetos-card">
+                <img src="image/meu-aquario-frente_full.jpg" alt="novo aquario" class="projetos-imagem">
+                <div class="caixa-textos-projetos">
+                    <h3 class="info-projetos">
+                        Segundo Aquario
+                    </h3>
+                    <p class="paragrafo-projetos">
+                        Aquario plantado retangular de 60cm de comprimento por 40cm de largura e 35cm de
+                        altura investindo em novo projeto.
+                    </p>
+                </div>
+            </div>
+
+            <div class="projetos-card">
+                <img src="image/nemo_na_anemona.jpg" alt="aquario marinho" class="projetos-imagem">
+                <div class="caixa-textos-projetos">
+                    <h3 class="info-projetos">
+                        Aquário Marinho
+                    </h3>
+                    <p class="paragrafo-projetos">
+                        Um aquario onde a estrela principal é o "Nemo", um peixinho palhaço
+                        resistente e muito bonito, igual ao filme procurando Nemo.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contatos" class="contatos">
+        <h2 class="contatos-titulo">Entre em Contato.</h2>
+        <form class="formulario-contato" id="formulario" onsubmit="enviarWhats(event)">
+            <div class="grupo-form">
+                <input type="text" placeholder="Nome" class="campo-form" id="nome">
+            </div>
+            <div class="grupo-form">
+                <textarea class="campo-form" placeholder="Digite sua mensagem" rows="6" id="mensagem"></textarea>
+            </div>
+            <button type="submit" class="botao-form">Enviar WhatZap</button>
+        </form>
+    </section>
+    <script>
+        function enviarWhats(event){
+            // evita que a tela recarregue por padrão
+            event.preventDefault();
+            // identifica o id nome no html
+            const nome = document.getElementById('nome').value;
+            // identifica o id mensagem no html
+            const mensagem = document.getElementById('mensagem').value;
+            // numero do celular que vai receber contato
+            const telefone = '5521967394577';
+            // criando a mensagem que será enviada
+            const texto = `Olá! Me chamo ${nome}, ${mensagem}`;
+            // formatando o texto para ser enviado
+            const msgFormatada = encodeURIComponent(texto);
+            // depois de escolher o formato da string em algum site de envio crie a sua.
+            const url = `https://wa.me/${telefone}?text=${msgFormatada}`;
+            
+            // abrindo a url em outra aba para enviar
+            window.open(url,'_blank');
+        }
+    </script>
+</body>
+
+</html>
