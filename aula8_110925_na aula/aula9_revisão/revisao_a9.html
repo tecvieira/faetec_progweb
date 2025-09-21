@@ -29,21 +29,48 @@
     </header> 
 
     <main id="sobre" class="sobre" >
-        <h2>Revisão sobre CSS</h2>
-        <h3>Formas de aplicar o CSS</h3>
+        <h2 class="sobre-titulo">Revisão sobre CSS</h2>
+        <h3 class="sobre-subtitulo">Formas de aplicar o CSS</h3>
         
-        <div>
+        <div class="sobre-div">
             <ul>
-                <li>Inline</li>
-                <p>Dentro da própria tag</p>
-                <li>Interno</li>
-                <p>Aplicado dentro da tag <strong>&lt;style&gt;&lt;/style&gt;</strong></p>
-                <li>Externo</li>
-                <p>Em um arquivo .css criado em separado, e referênciado através de uma tag<strong> &lt;link rel="stylesheet" href="nome_escolhido.css"&gt;</strong> </p>
+                <li class="sobre-li">Inline</li>
+                <p class="sobre-p">Dentro da própria tag</p>
+                <li class="sobre-li">Interno</li>
+                <p class="sobre-p">Aplicado dentro da tag <strong>&lt;style&gt;&lt;/style&gt;</strong></p>
+                <li class="sobre-li">Externo</li>
+                <p class="sobre-p">Em um arquivo .css criado em separado, e referênciado através de uma tag<strong> &lt;link rel="stylesheet" href="nome_escolhido.css"&gt;</strong> </p>
             </ul>
         </div>
-        <div>
-            <h3>Tipos de Seletores</h3>
+        <h3 class="sobre-subtitulo">Tipos de Seletores</h3>
+        <div class="sobre-div">
+            <table>
+                <tr >
+                    <th>TIPOS</th>
+                    <th>EXEMPLOS</th>
+                </tr>
+                <tr>
+                    <td>tag</td>
+                    <td >&lt;p&gt;, &lt;h1&gt;</td>
+                </tr>
+                <tr  >
+                    <td>classe</td>
+                    <td>class="menu", class="destaque"</td>
+                </tr>
+                <tr >
+                    <td>id</td>
+                    <td>#nome_escolhido</td>
+                </tr>
+                <tr >
+                    <td>tag > tag</td>
+                    <td>seletor descendente</td>
+                </tr>
+                <tr >
+                    <td>seletor universal</td>
+                    <td>*{atributo: valor;}</td>
+                </tr>
+            </table>
+            
             
         </div>
 

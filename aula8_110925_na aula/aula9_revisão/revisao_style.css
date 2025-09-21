@@ -18,6 +18,7 @@ roo:{
     --cinza:#e2d3d3;
     --branco:#C4E1F2;
     --verde:#BAF241;
+    --orange:#eb800d;
     --vidro:rgba(255, 255, 255, 0.1)
 }
 
@@ -74,24 +75,54 @@ body{
     border-radius: 20px;
 }
 
+.sobre-div{
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 16px;
+    border: 1px solid var(--vidro);
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.05);
+    margin-bottom: 15px;
+}
+
 .sobre{
     padding: greem 2rem;
 }
 
-.sobre h2{
-    font-size: 2.2rem;
+.sobre-titulo{
+    font-size: 3rem;
+    color: #7fb4d5;
+    text-align: center;
+    margin-bottom: 20px;
+    
 }
 
-.sobre li{
+.sobre-subtitulo{
+    font-size: 1.5rem;
+    text-align: center;
+    padding-bottom: 10px;
+    
+}
+.sobre-p{
+    font-size: 1.3rem;
+    color: #7fb4d5;
+    
+}
+
+.sobre-li {
     font-size: 1.5rem;
 }
 
-.sobre h3{
-    font-size: 1.4rem;
+.sobre-div table{
+    width: 300px;
+    border-collapse: collapse;
+    margin: 0 auto;
 }
-.sobre p{
-    font-size: 1.2rem;
-    color: #7fb4d5;
+
+.sobre-div td, th{
+    border: 1px solid #BAF241;
+    padding: 10px;
 }
 
 
