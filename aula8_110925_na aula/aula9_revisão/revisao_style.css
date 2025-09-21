@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+roo:{
+    --primaria:#0d2350;
+    --secundaria:#1154D9;
+    --terciaria:#7fb4d5;
+    --cinza:#e2d3d3;
+    --branco:#C4E1F2;
+    --verde:#BAF241;
+    --vidro:rgba(255, 255, 255, 0.1)
+}
+
+body{
+    background-color: #0d2350;
+    color: #C4E1F2;
+    
+}
+.navegacao{
+    position: fixed;
+    top: 0;
+    background: #1154D9;
+    width: 100%;
+    z-index: 100;
+    padding: 1.5rem;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 3rem;
+}
+.menu-link{
+    color: #C4E1F2;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.menu-link:hover{
+    color: #0d2350;
+    font-size: 1.4rem;
+}
+
+.cabecalho{
+    display: flex;
+    min-height: 100vh;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cabecalho h1{
+    font-size: 2.5rem;
+}
+
+.cabecalho p{
+    font-size: 1.5rem;
+}
+
+.foto_cabecalho{
+    width: 350px;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.sobre{
+    padding: greem 2rem;
+}
+
+.sobre h2{
+    font-size: 2.2rem;
+}
+
+.sobre li{
+    font-size: 1.5rem;
+}
+
+.sobre h3{
+    font-size: 1.4rem;
+}
+.sobre p{
+    font-size: 1.2rem;
+    color: #7fb4d5;
+}
+
+
