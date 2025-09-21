@@ -15,8 +15,9 @@
         <ul class="menu">
             <li><a href="#inicio" class="menu-link">Início</a></li>
             <li><a href="#sobre"  class="menu-link">Sobre</a></li>
-            <li><a href="#container" class="menu-link">Container</a></li>
-            <li><a href="#itens"  class="menu-link">Ítens</a></li>
+            <li><a href="#seletores" class="menu-link">Seletores</a></li>
+            <li><a href="#texto"  class="menu-link">Texto</a></li>
+            <li><a href="#boxmodel" class="menu-link">Box-Model</a></li>
             <li><a href="#contatos"  class="menu-link">Whtsapp</a></li>
         </ul>
     </nav>
@@ -42,7 +43,7 @@
                 <p class="sobre-p">Em um arquivo .css criado em separado, e referênciado através de uma tag<strong> &lt;link rel="stylesheet" href="nome_escolhido.css"&gt;</strong> </p>
             </ul>
         </div>
-        <h3 class="sobre-subtitulo">Tipos de Seletores</h3>
+        <h3 class="sobre-subtitulo" id="seletores">Tipos de Seletores</h3>
         <div class="sobre-div">
             <table>
                 <tr >
@@ -70,8 +71,43 @@
                     <td>*{atributo: valor;}</td>
                 </tr>
             </table>
-            
-            
+        </div>
+        <h3 class="sobre-subtitulo" id="texto">Cores, Fontes e Texto</h3>
+        <div class="sobre-div">
+            <ul>
+                <li class="sobre-li">color</li>
+                <p class="sobre-p">Define a cor do texto</p>
+                <li class="sobre-li">background-color</li>
+                <p class="sobre-p">Aplica uma cor ao fundo</p>
+                <li class="sobre-li">font-size</li>
+                <p class="sobre-p">Define um tamanho a fonte</p>
+                <li class="sobre-li">font-family</li>
+                <p class="sobre-p">Seleciona o tipo de fonte</p>
+                <li class="sobre-li">text-align</li>
+                <p class="sobre-p">Faz um alinhamento horizontal</p>
+                <li class="sobre-li">text-transform</li>
+                <p class="sobre-p">Permite transformar todo o texto em minúsculas (lowercase), maiúsculas (uppercase) ou apenas a primeira letra de
+                cada palavra em maiúscula (capitalize).</p>
+            </ul>
+        </div>
+        </div>
+        <h3 class="sobre-subtitulo" id="boxmodel">Box Model (Modelo de Caixas)</h3>
+        <div class="sobre-div">
+            <p class="sobre-p">Entender como elementos HTML se comportam como caixas com conteúdos internos, bordas e margens.</p>
+            <ul>
+                <li class="sobre-li">content</li>
+                <p class="sobre-p">É uma propriedade usada principalmente com os pseudoelementos ::before e ::after para inserir conteúdo gerado, como
+                texto ou imagens, sem alterar o HTML.</p>                
+                <li class="sobre-li">padding</li>
+                <p class="sobre-p">É uma propriedade que define o espaçamento interno de um elemento, ou seja, a distância entre o conteúdo de um elemento
+                e a sua borda.</p>
+                <li class="sobre-li">border</li>
+                <p class="sobre-p">É uma propriedade que desenha um contorno (uma linha) em volta de um elemento HTML, permitindo personalizar sua
+                aparência com diferentes estilos (como pontilhado ou contínuo), espessuras e cores.</p>
+                <li class="sobre-li">margin</li>
+                <p class="sobre-p">Cria um espaçamento externo ao redor de um elemento HTML, definindo a distância entre a borda do elemento e os elementos
+                vizinhos ou o fundo da página, com o objetivo de separar e posicionar os elementos de forma organizada.</p>
+            </ul>
         </div>
 
     </main>
