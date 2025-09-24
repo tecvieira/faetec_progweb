@@ -1,0 +1,43 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;/*Força a quebra de linha*/
+}
+
+.box {
+    flex:1 1 300px;/*Até 300px se mantem na mesma linha*/
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #1b8821;    
+    margin: 10px;
+    padding: 20px;
+    color: rgb(234, 238, 243);
+    text-align: center;    
+    box-sizing: border-box;
+    box-shadow: 2px 2px solid black;
+}
+
+#aquario{
+    width: 400px;
+    height: auto;
+    
+}
+
+@media screen and (max-width: 768px) {
+    .box{
+       background-color: #db2c1f; 
+    }
+    
+    #aquario{
+        transform: scale(80%);
+        transition: ease 0.4s;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .box {
+        background-color: #6694c0;
+    }
+    #aquario{
+        display: none;
+        
+}
