@@ -17,7 +17,7 @@
 }
 
 #aquario{
-    max-width: 400px;
+    max-width: 350px;
     height: auto;
     
 }
@@ -38,8 +38,6 @@
         background-color: #6694c0;
     }
     #aquario{
-        /*display: none;*/
-        transform: scale(50%);
-        transition: ease 0.4s;     
+       display: none;
   }
 }
