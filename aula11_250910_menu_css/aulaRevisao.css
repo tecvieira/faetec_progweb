@@ -11,25 +11,36 @@ body{
     background-color: #b0aed8;
     height: 100vh;
     width: 100vw;
-}
+} 
 
-header {
-    /* display: flex; */
+.cabecalho {
+    display: flex;
     background-color: rgb(17, 0, 255);
-    padding: 10px;
-    flex-flow: row wrap;
+    padding: 15px;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 50px;
+    
 }
 
-header nav{
+.menu{
     display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-end;
+    gap: 20px;
 }
 
-header nav a {
+.menu a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.menu a:hover,
+.menu a.active{
+    background-color: #555;
+}
+
+.active{
     color: white;
     padding: 10px;
     text-decoration: none;
@@ -58,14 +69,31 @@ header nav a {
     box-shadow: 2px 2px solid black;
 }
 
-@media screen and (max-width: 768px) {
-    .box{
-    background-color: #db2c1f; 
+@media screen and (max-width: 768px){
+    .box {
+            background-color: #db2c1f;
+        }
+    .cabecalho{
+        flex-direction: column;/*Altera a direção para coluna em tela pequena*/
+        align-items: flex-start;/*alinha os ítens a esquerda*/
+    }
+    .menu{
+        flex-direction: column;/*Altera a direção do menu para coluna*/
+        width: 100%;/*faz o menu ocupar a largura total*/
+        gap: 0;/*remove o espaçamento entre os links */
+    }
+    .menu a{
+        display: block; /*faz os links ocuparem a largura total do menu */
+        width: 100%;
+        text-align: center;/*centraliza o texto*/
+        padding: 15px;
+        border-bottom: 1px solid #444;/*Adiciona uma linha divisória*/
+    }
+
+    .menu a:last-child{
+        border-bottom: none; /*remove a linha do último link */
     }
     
-    #aquario{
-        transition: ease 0.4s;
-    }
 }
 
 @media screen and (max-width: 355px) {
@@ -73,8 +101,5 @@ header nav a {
         background-color: #6694c0;
         transition: ease 0.4s;
     }
-    #aquario{
-        transform: scale(50%);
-        transition: ease 0.4s;     
-    }
+
 }
