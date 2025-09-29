@@ -33,6 +33,8 @@ body{
 
 .menu{
     display: flex;
+    margin: 0 auto;
+    max-width: 80%;
     gap: 20px;
 }
 
@@ -62,20 +64,45 @@ body{
 }
 
 .box {
-    flex:1 0 300px;/*define o tamanho base do item antes do flexbox distribuir o espaço*/
+    
+    /*flex:1 0 300px;define o tamanho base do item antes do flexbox distribuir o espaço*/
+    width: 80%;
     background-color: var(--cor2);    
-    margin: 10px;
+    margin: 10px auto;
     padding: 20px;
     color: var(--cor0);
     text-align: center;    
-    box-sizing: border-box;
     box-shadow: 2px 2px  2px black;
 }
+
+.box-img{
+    width: 80%; /*Define a largura do container em relação a tela*/
+    background-color: var(--cor2);    
+    margin:0 auto;/*Apenas para centralizar a imagem*/
+    padding: 20px;
+    color: var(--cor0);
+    box-shadow: 2px 2px  2px black;
+}
+
+.box-img img{
+    max-width: 100%;
+    margin:0 auto;
+    height: auto;
+    display: block;
+}
+
+
 
 @media screen and (max-width: 768px){
     .box {
             background-color: #db2c1f;
         }
+
+    .box-img {
+            background-color: #db2c1f;
+        }
+
+    
     .cabecalho{
         flex-direction: column;/*Altera a direção para coluna em tela pequena*/
         align-items: flex-start;/*alinha os ítens a esquerda*/
@@ -103,5 +130,11 @@ body{
         background-color: var(--cor3);
         transition: ease 0.4s;
     }
+
+    .box-img {
+        background-color: var(--cor3);
+        transition: ease 0.4s;
+    }
+
 
 }
