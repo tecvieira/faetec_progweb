@@ -54,8 +54,7 @@ main{
 
 .texto .texto-paragrafo{
     text-align: justify;
-    
-   
+    text-indent: 1.5em;
 }
 
 
@@ -72,7 +71,6 @@ footer{
     max-width: 100%;
     height: auto;
     margin: 35px auto;
- 
 }
 
 
