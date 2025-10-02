@@ -40,6 +40,23 @@ main{
     text-align: justify;
 }
 
+.texto{
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.texto .texto-h2{
+    text-align: start;
+    
+}
+
+.texto .texto-paragrafo{
+    text-align: justify;
+    
+   
+}
 
 
 footer{
@@ -54,7 +71,7 @@ footer{
     text-align: center;
     max-width: 100%;
     height: auto;
-    margin: 0 auto;
+    margin: 35px auto;
  
 }
 
