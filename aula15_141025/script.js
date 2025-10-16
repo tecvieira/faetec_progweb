@@ -1,15 +1,12 @@
 function modificarBox() {
     const box = document.getElementById("fogo");
-
     box.classList.remove("box");
     box.classList.add("box-modificado");
-
 }
 
 
 function restauraPadrao() {
     const box = document.getElementById("fogo");
-
     box.classList.remove("box-modificado");
     box.classList.add("box");
 }
@@ -24,13 +21,13 @@ function ePar() {
     }
 }
 
-
 //Função 3: converter uma string para maiuscula
 function converteParaMaiuscula() {
     var string = document.getElementById("campo1").value;
     alert(string.toUpperCase());
 }
 
+//Verifica se dois valores são e iguais e do mesmo tipo
 function verificaDoisValores() {
     var numero1 = Number(document.getElementById("campo1").value);
     var numero2 = Number(document.getElementById("campo2").value);
@@ -38,12 +35,13 @@ function verificaDoisValores() {
         alert("São Identico");
     } else {
         alert("Não são identicos")
-
     }
 }
 
-
 // abaixo era da aula 13
+
+
+//faz somar dois valores
 function somar(a, b) {
     var campo1 = Number(document.getElementById("campo1").value);
     // busca o valor de campo 1 no input do html
@@ -55,14 +53,13 @@ function somar(a, b) {
     // vai apresentar o resultado no console dentro de F12
     alert(result);
     // vai saltar na tela mostrando o valor
-
 }
 
 
 function mudaClasse() {
-    var elemento = document.getElementById("div3");
-    elemento.classList.remove("texto");
-    elemento.classList.add("boxNovo");
+    cont elemento = document.getElementById("elemento");
+    box.classList.remove("elemento");
+    box.classList.add("boxNovo");
     // adicionando funcionalida para desabilitar o campo 2 
     var campo2 = document.getElementById("campo2");
     campo2.setAttribute("disabled", true);

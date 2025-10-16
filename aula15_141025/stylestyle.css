@@ -40,6 +40,19 @@ header{
     transition: all 0.4s ease;
 }
 
+.elemento{
+    display: flex;
+    width: 100px;
+    height: 100px;
+    background-color: #e43f0d;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 2px 2px 1px black;
+    transition: all 0.4s ease;
+}
+
+
 .box-modificado{
     display: flex;
         width: 100px;
@@ -51,6 +64,11 @@ header{
         border-radius: 10px;
         box-shadow: 2px 2px 1px black;
         transition: all 0.4s ease;
+}
+
+.boxNovo{
+    background-color: blueviolet;
+    color: white;
 }
 
 input[type="text"]{
