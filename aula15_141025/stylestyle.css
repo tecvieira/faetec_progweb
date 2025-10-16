@@ -1,23 +1,23 @@
 @charset "UTF-8";
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: #e5cfcf;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
 
-header{
+header {
     background-color: #fff;
     padding: 15px 0;
 }
 
-.container{
+.container {
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -28,7 +28,7 @@ header{
     background-color: rgb(158, 158, 182);
 }
 
-.box{
+.box {
     display: flex;
     width: 100px;
     height: 100px;
@@ -40,11 +40,12 @@ header{
     transition: all 0.4s ease;
 }
 
-.elemento{
+.elemento {
     display: flex;
     width: 100px;
     height: 100px;
-    background-color: #e43f0d;
+    background-color: #180de4;
+    color: white;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
@@ -53,17 +54,17 @@ header{
 }
 
 
-.box-modificado{
+.box-modificado {
     display: flex;
-        width: 100px;
-        height: 100px;
-        background-color: #ea6614;
-        color: white;
-        justify-content: center;
-        align-items: center;
-        border-radius: 10px;
-        box-shadow: 2px 2px 1px black;
-        transition: all 0.4s ease;
+    width: 100px;
+    height: 100px;
+    background-color: #ea6614;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 2px 2px 1px black;
+    transition: all 0.4s ease;
 }
 
 /* .elemento{
@@ -81,12 +82,12 @@ header{
 
 
 
-.boxNovo{
+.boxNovo {
     background-color: blueviolet;
     color: white;
 }
 
-input[type="text"]{
+input[type="text"] {
     padding: 10px 15px;
     font-size: 16px;
     border: 1px solid #ccc;
@@ -97,9 +98,9 @@ input[type="text"]{
     margin: 10px;
 }
 
-input[type="text"]:{
+input[type="text"]: {
     border-color: #007BFF;
-    box-shadow: 0 0 5px rgba(0,123, 255, 0.5);
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
 /* button{
@@ -116,7 +117,7 @@ button:hover{
     background-color: #555;
 } */
 
- button{
+button {
     /* display: block; */
     width: 200px;
     padding: 10px 20px;
@@ -131,6 +132,6 @@ button:hover{
     transition: 0.3s;
 }
 
-button:hover{
+button:hover {
     background-color: #0056b3;
-} 
+}

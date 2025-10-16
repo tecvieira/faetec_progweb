@@ -4,11 +4,17 @@ function modificarBox() {
     box.classList.add("box-modificado");
 }
 
-
+//Restaura o padrão box nas 3 divs
 function restauraPadrao() {
     const box = document.getElementById("fogo");
     box.classList.remove("box-modificado");
     box.classList.add("box");
+    const elemento1 = document.getElementById("terra");
+    elemento1.classList.remove("elemento");
+    elemento1.classList.add("box");
+    const elemento2 = document.getElementById("ar");
+    elemento2.classList.remove("elemento");
+    elemento2.classList.add("box");
 }
 
 //Função 2: verificar se um número é par
@@ -27,20 +33,6 @@ function converteParaMaiuscula() {
     alert(string.toUpperCase());
 }
 
-//Verifica se dois valores são e iguais e do mesmo tipo
-function verificaDoisValores() {
-    var numero1 = Number(document.getElementById("campo1").value);
-    var numero2 = Number(document.getElementById("campo2").value);
-    if (numero1 === numero2) {
-        alert("São Identico");
-    } else {
-        alert("Não são identicos")
-    }
-}
-
-// abaixo era da aula 13
-
-
 //faz somar dois valores
 function somar(a, b) {
     var campo1 = Number(document.getElementById("campo1").value);
@@ -55,27 +47,31 @@ function somar(a, b) {
     // vai saltar na tela mostrando o valor
 }
 
-
-function mudaClasse() {
-    cont elemento = document.getElementById("elemento");
-    box.classList.remove("elemento");
-    box.classList.add("boxNovo");
-    // adicionando funcionalida para desabilitar o campo 2 
+//Verifica se dois valores são e iguais e do mesmo tipo
+function verificaDoisValores() {
+    var numero1 = Number(document.getElementById("campo1").value);
+    var numero2 = Number(document.getElementById("campo2").value);
+    if (numero1 === numero2) {
+        alert("São Identico");
+    } else {
+        alert("Não são identicos")
+    }
+}
+//Muda a classe em duas div simultaneamente e bloqueia campo 2
+function mudaclasse() {
+    const elemento1 = document.getElementById("terra");
+    const elemento2 = document.getElementById("ar");
+    elemento1.classList.remove("box");
+    elemento2.classList.remove("box");
+    elemento1.classList.add("elemento");
+    elemento2.classList.add("elemento");
+    //desabilitar o campo 2 
     var campo2 = document.getElementById("campo2");
     campo2.setAttribute("disabled", true);
 }
-
 
 function removeAtributo() {
     // remove o bloqueio do campo 2
     var campo2 = document.getElementById("campo2");
     campo2.removeAttribute("disabled");
-
-    //  desfaz a classe anterior e volta ao original
-    var elemento = document.getElementById("div3");
-    //  não esqueça de remover a classe anterior
-    elemento.classList.remove("boxNovo");
-    //  adicionando a classe original
-    elemento.classList.add("texto");
-
 }
