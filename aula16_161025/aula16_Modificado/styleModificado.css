@@ -16,6 +16,23 @@ header{
     align-items: center;
 }
 
+.div-button{
+    display: flex;
+    max-width: 900px;
+    height: auto;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    
+   
+   
+    flex-direction: column;
+}
+
 #alvo{
     margin-top: 20px;
     padding: 10px;
@@ -32,11 +49,12 @@ button{
     padding: 8px 15px;
     border: none;
     border-radius: 6px;
-    background-color: #4caf50;
-    color: white;
+    background-color: #4c86af;
+    color: rgb(0, 0, 0);
     cursor: pointer;
 }
 
 button:hover{
-    background-color: #45a049;
+    background-color: #2815b5;
+    color: white;
 }
