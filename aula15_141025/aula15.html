@@ -1,39 +1,41 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylestyle.css">
-    <script src="script.js"></script>
+
     <title>Exercício </title>
 </head>
+
 <body>
     <header>
         <h1>Exercício: Manipulando Classes com JavaScript</h1>
     </header>
     <main>
         <div class="container">
-            <div class="box" id="elemento">TERRA</div>
-            <div class="box" id="fogo">FOGO</div>
-            <div class="box" id="elemento">AR</div>
+            <div class="box" id="terra">TERRA</div>
+            <div id="fogo" class="box">FOGO</div>
+            <div class="box" id="ar">AR</div>
         </div>
-            <div class="button">
-                <input type="text" id="campo1">
-                <input type="text" id="campo2">
-                <div>
-                    <button onclick="modificarBox()">Mudar Box</button>
-                    <button onclick="mudaclasse()">Mudar Classe</button>
-                    <button onclick="restauraPadrao()">Restaurar Padrão</button>
-                    <button onclick="somar()">Somar</button>
-                    
-                    <button onclick="removeAtributo()">Remover Atributo</button>
-                    <button onclick="ocultar()">Ocultar</button>
-                    <button onclick="ePar()">Verifica se é par</button>
-                    <button onclick="verificaDoisValores()">Verificar dois Valores</button>
-                    <button onclick="converteParaMaiuscula()">Converte Maiuscula</button>
-                </div>
+        <div class="button">
+            <input type="text" id="campo1" placeholder="campo1">
+            <input type="text" id="campo2" placeholder="campo2">
+            <div>
+                <button onclick="modificarBox()">Mudar Box</button>
+                <button onclick="ePar()">Verifica se é par</button>
+                <button onclick="restauraPadrao()">Restaurar Padrão</button>
+                <button onclick="converteParaMaiuscula()">Converte Maiuscula</button>
+                <button onclick="somar()">Somar</button>
+                <button onclick="verificaDoisValores()">Verificar dois Valores</button>
+                <button onclick="mudaclasse()">Mudar Classe</button>
+                <button onclick="removeAtributo()">Libera campo2</button>
+                <button onclick="ocultar()">Ocultar</button>
             </div>
+        </div>
     </main>
-    
+    <script src="script.js"></script>
 </body>
+
 </html>
