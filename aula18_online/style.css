@@ -20,4 +20,14 @@ button{
     cursor: pointer;
 }
 
-button:hover{background-color: ;}
+button:hover{
+    background-color:#005fa3 ;
+}
+
+#resultado{
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    min-height: 50px;
+}
