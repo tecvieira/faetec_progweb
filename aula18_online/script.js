@@ -5,7 +5,12 @@ document.getElementById("arrayBase").textContent = frutas.join(", ");
 
 // Exibe o Array inicial completo
 function mostrarArray() {
-    document.getElementById("resultado").textContent = `Array inicial: ` + frutas.join(", ");
+    // document.getElementById("resultado").textContent = `Array inicial: ` + frutas.join(", ");
+    exibir(`Array inicial: ` + frutas.join(", "));
+}
+// função comum para exibir o texto nas outra funções
+function exibir(texto){
+    document.getElementById("resultado").innerHTML = texto
 }
 
 // Adiciona um item ao final do array
