@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background: #f4f4f4;
+    background: #ddd8d6;
     color: #333;
     padding: 20px;
 }
@@ -10,7 +10,28 @@ h1 {
     color: #0078D7;
 }
 
+p{
+    text-align: center;
+}
+
+.arrumaBotoes{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    background-color: #BF6A39;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#extraButton{
+    background-color: blue;
+    color: yellow;
+    font-weight: 600;
+
+}
+
 button {
+   
     margin: 5px;
     padding: 10px 15px;
     border: none;
