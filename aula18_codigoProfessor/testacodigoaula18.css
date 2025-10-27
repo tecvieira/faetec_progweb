@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background: #ddd8d6;
+    background: #bdbcbe;
     color: #333;
     padding: 20px;
 }
@@ -20,7 +20,7 @@ p{
     margin: 0 auto;
     grid-template-columns: auto auto auto;
     gap: 10px;
-    background-color: #BF6A39;
+    background-color: #987cd2;
     padding: 10px;
     border-radius: 10px;
 }
