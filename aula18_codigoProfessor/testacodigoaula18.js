@@ -64,6 +64,6 @@ function novaFuncao(){
     let filtrado = frutas.filter(f => f.length > 5);
     let maiusculas = filtrado.map(f => f.toUpperCase());
     maiusculas.sort();
-    exibir("Array com mais de 5 letras, maiusculas e em ordem alfabética " + maiusculas.join(", "));
+    exibir("Array com mais de 5 letras, maiusculas e em ordem alfabética:  " + maiusculas.join(", "));
 }
 

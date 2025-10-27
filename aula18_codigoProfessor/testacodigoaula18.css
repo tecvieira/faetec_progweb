@@ -16,6 +16,8 @@ p{
 
 .arrumaBotoes{
     display: grid;
+    max-width: 1000px;
+    margin: 0 auto;
     grid-template-columns: auto auto auto;
     gap: 10px;
     background-color: #BF6A39;
