@@ -66,3 +66,32 @@ function dataAtual() {
     exibir(`Data atual: <strong>${hoje.toLocaleDateString("pt-BR")}</strong><br>
     Hora: <strong>${hoje.toLocaleTimeString("pt-BR")}</strong>`);
 }
+
+// Escolhe uma fruta aleatória destro de uma lista
+function geraFruta() {
+    const randomIndex = Math.floor(Math.random() * frutas.length);
+    const frutaAleatoria = frutas[randomIndex];
+    exibir(`Fruta aleatória gerada: <strong>${frutaAleatoria}</strong>`)
+}
+
+// Pesquisa uma fruta na lista (Função implementada)
+function pesquisaFruta() {
+    const inputElement = document.getElementById("minhaFruta");
+    const pesquisa = inputElement.value.trim();
+    if (pesquisa === "") {
+        exibir("<span>Erro:</span> Por favor, digite o nome de uma fruta para pesquisar.");
+        return;
+    }
+
+    // Pesquisa de forma case-insensitive
+    const pesquisaMinuscula = pesquisa.toLowerCase();
+    const encontrada = frutas.some(f => f.toLowerCase() === pesquisaMinuscula);
+
+    if (encontrada) {
+        exibir(`A fruta <strong>"${pesquisa}"</strong> <span class="text-green-600 font-bold">existe</span> na lista. (Demonstra o uso de <code>some()</code> e <code>toLowerCase()</code>)`);
+    } else {
+        exibir(`A fruta <strong>"${pesquisa}"</strong> <span class="text-red-600 font-bold">não existe</span> na lista. (Demonstra o uso de <code>some()</code> e <code>toLowerCase()</code>)`);
+    }
+
+
+}
