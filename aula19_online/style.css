@@ -16,6 +16,58 @@ body {
 h1 {
     text-align: center;
     color: #2c78d7;
+    padding-top: 20px;
+}
+
+p{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+    color: #21b01c;
+    padding-top: 20px;
+}
+
+#minhaFruta{
+    display: block;
+    width: 280px;
+    height: 30px;
+    /* centraliza o imput */
+    margin: 15px auto;
+    border: none;
+    background: #b9df8b;
+    color: #000000;
+    text-align: center;
+}
+
+
+.todosBotoes{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    max-width: 1000px;
+    margin: 15px auto;
+}
+
+.botoesExtras{
+    display: grid;
+    grid-template-columns: auto auto;
+    max-width: 1000px;
+    margin: 15px auto;
+}
+
+.extrabutton{
+    margin: 5px;
+    padding: 10px 15px;
+    border: none;
+    background-color: #3bb337;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.extrabutton:hover{
+    background-color: #188717;
 }
 
 button {
@@ -35,8 +87,10 @@ button:hover {
 #resultado {
     background: white;
     padding: 15px;
-    margin-top: 15px;
+    margin: 15px auto;
     border-radius: 8px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     min-height: 50px;
+    max-width: 1000px;
+    text-align: center;
 }
