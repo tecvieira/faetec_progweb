@@ -52,7 +52,7 @@ h2{
 .botoesExtras{
     display: grid;
     grid-template-columns: auto auto;
-    max-width: 1000px;
+    max-width: 500px;
     margin: 15px auto;
 }
 
