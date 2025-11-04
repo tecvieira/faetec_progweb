@@ -93,5 +93,4 @@ function pesquisaFruta() {
         exibir(`A fruta <strong>"${pesquisa}"</strong> <span class="text-red-600 font-bold">não existe</span> na lista. (Demonstra o uso de <code>some()</code> e <code>toLowerCase()</code>)`);
     }
 
-
 }
