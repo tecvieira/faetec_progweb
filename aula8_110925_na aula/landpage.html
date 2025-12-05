@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,137 +9,139 @@
     <link rel="stylesheet" href="style.css">
     <title>Landing Page</title>
 </head>
-    <body>
-        <!-- CABEÇALHO --> 
-        <header> 
-            <img src="image/images.png" alt="Logo" class="logo"> 
-            <nav> 
-                <ul> 
-                    <li><a href="#destaque">Home</a></li> 
-                    <li><a href="#sobre">Sobre</a></li> 
-                    <li><a href="#servicos">Serviços</a></li> 
-                    <li><a href="#planos">Planos</a></li> 
-                    <li><a href="#contato">Contato</a></li> 
-                    <li><a href="https://www.google.com/?zx=1757633179513&no_sw_cr=1" target="_blank">Google</a></li>
-                </ul> 
-            </nav> 
-        </header>
 
-        <!-- CONTEÚDO PRINCIPAL --> 
-        <main> 
+<body>
+    <!-- CABEÇALHO -->
+    <header>
+        <img src="image/images.png" alt="Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="#destaque">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#planos">Planos</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="https://www.google.com/?zx=1757633179513&no_sw_cr=1" target="_blank">Google</a></li>
+            </ul>
+        </nav>
+    </header>
 
-            <!-- SEÇÃO DE DESTAQUE --> 
-            <section id="destaque"> 
-                <h1>Bem-vindo à Nossa Landing Page</h1> 
-                <h2>Aprenda Front-End de forma prática e organizada</h2> 
-                <p>Comece agora a construir suas próprias páginas e 
-                aplicativos modernos, do HTML ao CSS e JavaScript.</p> 
-                <button>Quero me inscrever</button> 
-            </section>
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main>
 
-            <!-- SEÇÃO SOBRE --> 
-            <section id="sobre"> 
-                <h2>Sobre Nós</h2> 
-                <article> 
-                    <figure> 
-                        <img src="image/images.png" alt="Nossa Equipe"> 
-                        <figcaption>Nossa equipe dedicada</figcaption> 
-                    </figure>
-                    <!--A tag (em) faz o texto ficar no modo itálico--> 
-                    <p><strong>Somos uma escola de tecnologia</strong> focada 
-                    em ensino de desenvolvimento front-end. <em>Nosso objetivo é tornar você 
-                    um profissional pronto para o mercado!</em></p> 
-                </article> 
-            </section>
+        <!-- SEÇÃO DE DESTAQUE -->
+        <section id="destaque">
+            <h1>Bem-vindo à Nossa Landing Page</h1>
+            <h2>Aprenda Front-End de forma prática e organizada</h2>
+            <p>Comece agora a construir suas próprias páginas e
+                aplicativos modernos, do HTML ao CSS e JavaScript.</p>
+            <button>Quero me inscrever</button>
+        </section>
 
-            <!-- SEÇÃO DE SERVIÇOS --> 
-            <section id="servicos"> 
-                <h2>Serviços</h2> 
-                <ul> 
-                    <li>Mentorias ao vivo</li> 
-                    <li>Materiais exclusivos</li> 
-                    <li>Comunidade ativa</li> 
-                </ul> 
-                <h3>Passos de aprendizado:</h3> 
-                <ol> 
-                    <li>HTML</li> 
-                    <li>CSS</li> 
-                    <li>JavaScript</li> 
-                </ol> 
-            </section> 
+        <!-- SEÇÃO SOBRE -->
+        <section id="sobre">
+            <h2>Sobre Nós</h2>
+            <article>
+                <figure>
+                    <img src="image/images.png" alt="Logotipo da empresa de tecnologia">
+                    <figcaption>Nossa equipe dedicada</figcaption>
+                </figure>
+                <!--A tag (em) faz o texto ficar no modo itálico-->
+                <p><strong>Somos uma escola de tecnologia</strong> focada
+                    em ensino de desenvolvimento front-end. <em>Nosso objetivo é tornar você
+                        um profissional pronto para o mercado!</em></p>
+            </article>
+        </section>
 
-            <!-- SEÇÃO DE PLANOS --> 
-            <section id="planos"> 
-                <h2>Planos Disponíveis</h2> 
-                <table> 
-                    <thead> 
-                        <tr> 
-                            <th>Plano</th> 
-                            <th>Preço</th> 
-                            <th>Benefícios</th> 
-                        </tr> 
-                    </thead> 
-                    <tbody> 
-                        <tr> 
-                            <td>Básico</td> 
-                            <td>R$49,90</td> 
-                            <td>Acesso ao curso</td> 
-                        </tr> 
-                        <tr> 
-                            <td>Premium</td> 
-                            <td>R$99,90</td> 
-                            <td>Aulas + Mentoria</td> 
-                        </tr> 
-                    </tbody> 
-                    <tfoot> 
-                        <tr> 
-                            <td colspan="3">Promoção válida até o fim do mês</td> 
-                        </tr> 
-                    </tfoot> 
-                </table> 
-            </section>
+        <!-- SEÇÃO DE SERVIÇOS -->
+        <section id="servicos">
+            <h2>Serviços</h2>
+            <ul>
+                <li>Mentorias ao vivo</li>
+                <li>Materiais exclusivos</li>
+                <li>Comunidade ativa</li>
+            </ul>
+            <h3>Passos de aprendizado:</h3>
+            <ol>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ol>
+        </section>
 
-            <!-- SEÇÃO DE CONTATO --> 
-            <section id="contato"> 
-                <h2>Entre em Contato</h2> 
-                <form action="#" method="post">
-                    <!--fieldset agrupa elementos relacionados dentro de um formulario --> 
-                    <fieldset> 
-                        <legend>Seus Dados</legend> 
-                        <label for="nome">Nome:</label> 
-                        <input type="text" id="nome" name="nome" required> 
-    
-                        <label for="email">E-mail:</label> 
-                        <input type="email" id="email" name="email" required> 
-    
-                        <label for="assunto">Assunto:</label> 
-                        <select id="assunto" name="assunto"> 
-                            <option value="duvida">Dúvida</option> 
-                            <option value="suporte">Suporte</option> 
-                            <option value="outros">Outros</option> 
-                        </select> 
-    
-                        <label for="mensagem">Mensagem:</label> 
-                        <textarea id="mensagem" name="mensagem" rows="4"></textarea> 
-    
-                        <input type="submit" value="Enviar"> 
-                        <input type="reset" value="Limpar"> 
-                    </fieldset> 
-                </form> 
-            </section>
-        </main>
-        <footer>
-            <p>Siga-nos nas redes sociais:</p> 
-            <a href="#">Facebook</a> |  
-            <a href="#">Instagram</a> |  
-            <a href="#">LinkedIn</a> 
-            <p>&copy; 2025 - Minha Empresa. Todos os direitos reservados.</p> 
-        </footer>
+        <!-- SEÇÃO DE PLANOS -->
+        <section id="planos">
+            <h2>Planos Disponíveis</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Plano</th>
+                        <th>Preço</th>
+                        <th>Benefícios</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Básico</td>
+                        <td>R$49,90</td>
+                        <td>Acesso ao curso</td>
+                    </tr>
+                    <tr>
+                        <td>Premium</td>
+                        <td>R$99,90</td>
+                        <td>Aulas + Mentoria</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Promoção válida até o fim do mês</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
 
-        <!-- SCRIPT --> 
-        <script> 
-            console.log("Landing page carregada!"); 
-        </script>
+        <!-- SEÇÃO DE CONTATO -->
+        <section id="contato">
+            <h2>Entre em Contato</h2>
+            <form action="#" method="post">
+                <!--fieldset agrupa elementos relacionados dentro de um formulario -->
+                <fieldset>
+                    <legend>Seus Dados</legend>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
 
-    </body>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="assunto">Assunto:</label>
+                    <select id="assunto" name="assunto">
+                        <option value="duvida">Dúvida</option>
+                        <option value="suporte">Suporte</option>
+                        <option value="outros">Outros</option>
+                    </select>
+
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Siga-nos nas redes sociais:</p>
+        <a href="#">Facebook</a> |
+        <a href="#">Instagram</a> |
+        <a href="#">LinkedIn</a>
+        <p>&copy; 2025 - Minha Empresa. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- SCRIPT -->
+    <script>
+        console.log("Landing page carregada!"); 
+    </script>
+
+</body>
+
 </html>
