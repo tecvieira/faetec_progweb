@@ -4,18 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Aula7">
+    <meta name="description"
+        content="Aprenda Front-End do básico ao avançado com mentorias, projetos práticos e suporte especializado.">
     <meta name="author" content="Robson Vander">
     <link rel="stylesheet" href="style.css">
-    <title>Landing Page</title>
+    <title>Escola Front-End</title>
 </head>
 
 <body>
     <!-- CABEÇALHO -->
-    <header>
-        <img src="image/images.png" alt="Logo" class="logo">
-        <nav>
-            <ul>
+    <header class="header">
+        </div class="container">
+        <a href="#destaque" class="logo-link">
+            <img src="image/images.png" alt="Logo Escola Front-End" class="logo">
+        </a>
+        <nav aria-label="Menu Principal">
+            <ul class="menu">
                 <li><a href="#destaque">Home</a></li>
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#servicos">Serviços</a></li>
@@ -30,111 +34,217 @@
     <main>
 
         <!-- SEÇÃO DE DESTAQUE -->
-        <section id="destaque">
-            <h1>Bem-vindo à Nossa Landing Page</h1>
-            <h2>Aprenda Front-End de forma prática e organizada</h2>
-            <p>Comece agora a construir suas próprias páginas e
-                aplicativos modernos, do HTML ao CSS e JavaScript.</p>
-            <button>Quero me inscrever</button>
+        <section id="destaque" class="hero">
+            <div class="container">
+                <h1>Aprenda Front-End de Forma Profissional</h1>
+
+                <p>
+                    Desenvolva sites modernos utilizando HTML,
+                    CSS e JavaScript através de aulas práticas
+                    e projetos reais.
+                </p>
+
+                <button type="button" class="btn-primary">
+                    Quero me inscrever
+                </button>
+            </div>
         </section>
 
         <!-- SEÇÃO SOBRE -->
-        <section id="sobre">
-            <h2>Sobre Nós</h2>
-            <article>
-                <figure>
-                    <img src="image/images.png" alt="Logotipo da empresa de tecnologia">
-                    <figcaption>Nossa equipe dedicada</figcaption>
-                </figure>
-                <!--A tag (em) faz o texto ficar no modo itálico-->
-                <p><strong>Somos uma escola de tecnologia</strong> focada
-                    em ensino de desenvolvimento front-end. <em>Nosso objetivo é tornar você
-                        um profissional pronto para o mercado!</em></p>
-            </article>
+        <section id="sobre" class="sobre">
+            <div class="container">
+                <h2>Por que escolher nossa escola?</h2>
+                <p>Nossos cursos são projetados para fornecer uma experiência de aprendizado completa, com foco em
+                    projetos práticos e mentorias personalizadas.</p>
+                <article class="sobre-nos">
+
+                    <figure>
+                        <img src="image/images.png" alt="Logotipo da empresa de tecnologia">
+                        <figcaption>Nossa equipe dedicada</figcaption>
+                    </figure>
+
+                    
+                    <div>
+                        <p>
+                            <strong>Somos uma escola de tecnologia</strong> especializada em desenvolvimento front-end.
+                        </p>
+                        <p>
+                            <!--A tag (em) faz o texto ficar no modo itálico-->
+                            <em>Nosso objetivo é tornar você
+                                um profissional pronto para o mercado!</em>
+                        </p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
         </section>
 
         <!-- SEÇÃO DE SERVIÇOS -->
-        <section id="servicos">
-            <h2>Serviços</h2>
-            <ul>
-                <li>Mentorias ao vivo</li>
-                <li>Materiais exclusivos</li>
-                <li>Comunidade ativa</li>
-            </ul>
-            <h3>Passos de aprendizado:</h3>
-            <ol>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-            </ol>
+        <section id="servicos" class="servicos">
+            <div class="container">
+                <h2>O que você recebe</h2>
+                <div class="cards">
+                
+                    <article class="card">
+                        <h3>Mentorias</h3>
+                        <p>Encontros ao vivo para tirar dúvidas.</p>
+                    </article>
+                
+                    <article class="card">
+                        <h3>Materiais Exclusivos</h3>
+                        <p>Apostilas e exercícios atualizados.</p>
+                    </article>
+                
+                    <article class="card">
+                        <h3>Comunidade</h3>
+                        <p>Networking e suporte contínuo.</p>
+                    </article>
+                
+                </div>
+                <h3>Trilha de Aprendizagem</h3>
+
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                        <li>React</li>
+                        <li>Projetos Reais</li>
+                    </ul>
+
+            </div>
+
         </section>
 
         <!-- SEÇÃO DE PLANOS -->
-        <section id="planos">
-            <h2>Planos Disponíveis</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Plano</th>
-                        <th>Preço</th>
-                        <th>Benefícios</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Básico</td>
-                        <td>R$49,90</td>
-                        <td>Acesso ao curso</td>
-                    </tr>
-                    <tr>
-                        <td>Premium</td>
-                        <td>R$99,90</td>
-                        <td>Aulas + Mentoria</td>
-                    </tr>
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <td colspan="3">Promoção válida até o fim do mês</td>
-                    </tr>
-                </tfoot>
-            </table>
+        <section id="planos" class="planos">
+            <div class="container">
+        
+                <h2>Planos Disponíveis</h2>
+        
+                <div class="planos-grid">
+        
+                    <article class="plano">
+                        <h3>Básico</h3>
+                        <p class="preco">R$ 49,90</p>
+                        <ul>
+                            <li>Acesso ao curso</li>
+                            <li>Certificado</li>
+                        </ul>
+                    </article>
+        
+                    <article class="plano destaque">
+                        <h3>Premium</h3>
+                        <p class="preco">R$ 99,90</p>
+                        <ul>
+                            <li>Aulas completas</li>
+                            <li>Mentorias ao vivo</li>
+                            <li>Projetos práticos</li>
+                        </ul>
+                    </article>
+        
+                </div>
+        
+            </div>
         </section>
 
         <!-- SEÇÃO DE CONTATO -->
-        <section id="contato">
-            <h2>Entre em Contato</h2>
-            <form action="#" method="post">
-                <!--fieldset agrupa elementos relacionados dentro de um formulario -->
-                <fieldset>
-                    <legend>Seus Dados</legend>
-                    <label for="nome">Nome:</label>
-                    <input type="text" id="nome" name="nome" required>
-
-                    <label for="email">E-mail:</label>
-                    <input type="email" id="email" name="email" required>
-
-                    <label for="assunto">Assunto:</label>
-                    <select id="assunto" name="assunto">
-                        <option value="duvida">Dúvida</option>
-                        <option value="suporte">Suporte</option>
-                        <option value="outros">Outros</option>
-                    </select>
-
-                    <label for="mensagem">Mensagem:</label>
-                    <textarea id="mensagem" name="mensagem" rows="4"></textarea>
-
-                    <input type="submit" value="Enviar">
-                    <input type="reset" value="Limpar">
-                </fieldset>
-            </form>
+        <section id="contato" class="contato">
+            <div class="container">
+        
+                <div class="titulo-contato">
+                    <h2>📞 Entre em Contato</h2>
+                    <p>
+                        Tem alguma dúvida ou deseja mais informações sobre nossos cursos?
+                        Preencha o formulário abaixo e responderemos o mais rápido possível.
+                    </p>
+                </div>
+        
+                <form action="#" method="post" class="formulario-contato">
+        
+                    <fieldset>
+                        <legend>📝 Seus Dados</legend>
+        
+                        <div class="linha">
+        
+                            <div class="campo">
+                                <label for="nome">👤 Nome Completo</label>
+                                <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo"
+                                    autocomplete="name" required>
+                            </div>
+        
+                            <div class="campo">
+                                <label for="email">📧 E-mail</label>
+                                <input type="email" id="email" name="email" placeholder="Digite seu e-mail" autocomplete="email"
+                                    required>
+                            </div>
+        
+                        </div>
+        
+                        <div class="linha">
+        
+                            <div class="campo">
+                                <label for="telefone">📱 Telefone</label>
+                                <input type="tel" id="telefone" name="telefone" placeholder="(21) 99999-9999">
+                            </div>
+        
+                            <div class="campo">
+                                <label for="assunto">📌 Assunto</label>
+                                <select id="assunto" name="assunto">
+                                    <option value="">Selecione um assunto</option>
+                                    <option value="duvida">Dúvida</option>
+                                    <option value="suporte">Suporte</option>
+                                    <option value="orcamento">Orçamento</option>
+                                    <option value="outros">Outros</option>
+                                </select>
+                            </div>
+        
+                        </div>
+        
+                        <div class="campo">
+                            <label for="mensagem">💬 Mensagem</label>
+                            <textarea id="mensagem" name="mensagem" rows="6"
+                                placeholder="Escreva sua mensagem aqui..."></textarea>
+                        </div>
+        
+                        <div class="campo checkbox">
+                            <input type="checkbox" id="termos" required>
+        
+                            <label for="termos">
+                                Concordo com os termos e política de privacidade.
+                            </label>
+                        </div>
+        
+                        <div class="acoes">
+                            <button type="submit" class="btn-enviar">
+                                🚀 Enviar Mensagem
+                            </button>
+        
+                            <button type="reset" class="btn-limpar">
+                                🔄 Limpar
+                            </button>
+                        </div>
+        
+                    </fieldset>
+        
+                </form>
+        
+            </div>
         </section>
+        
+        
     </main>
-    <footer>
+    <footer class="footer">
         <p>Siga-nos nas redes sociais:</p>
-        <a href="#">Facebook</a> |
-        <a href="#">Instagram</a> |
-        <a href="#">LinkedIn</a>
-        <p>&copy; 2025 - Minha Empresa. Todos os direitos reservados.</p>
+        <nav aria-label="Redes sociais">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">LinkedIn</a>
+        </nav>
+        
+        <p>&copy; 2025 - Escola Front-End.</p>
     </footer>
 
     <!-- SCRIPT -->
